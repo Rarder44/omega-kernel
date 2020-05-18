@@ -20,7 +20,7 @@ include $(DEVKITARM)/gba_rules
 # the makefile is found
 #
 #---------------------------------------------------------------------------------
-TARGET		:= $(notdir $(CURDIR))
+TARGET		:= ezkernel
 BUILD		:= build
 SOURCES		:= source source/ff13c
 INCLUDES	:= include source/ff13c

@@ -6,5 +6,6 @@ set LIBGBA=/c/devkitPro/libgba
 del *.bin
 make  
 rem >error.txt 2>&1
+
 del *.elf
-ren ezkernel.gba ezkernel.bin
+ren ezkernel.gba ezkernel.bin 
