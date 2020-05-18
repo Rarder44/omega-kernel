@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "compile",
+			"command": "./build_vscode.bat",
+			"args": [],
+			"options": {
+				"cwd": "../"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+                "kind": "build",
+                "isDefault": true
+            }
+		}
+	]
+}

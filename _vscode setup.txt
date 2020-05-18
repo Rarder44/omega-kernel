@@ -1,0 +1,1 @@
+you need to install "mingw-w64" and then configure the c_cpp_properties.json to set the compilerPath to the gcc.exe in the installation folder
