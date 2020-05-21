@@ -21,22 +21,25 @@
 #include "GBApatch.h"
 #include "showcht.h"
 
-#include "images/splash.h"
-#include "images/SD.h"
-#include "images/NOR.h" 
-#include "images/SET.h"
-#include "images/HELP.h"
-#include "images/RECENTLY.h"
+#include "splash.h"
+#include "SD.h"
+#include "NOR.h"
+#include "SET.h"
+#include "HELP.h"
+#include "RECENTLY.h"
 
-#include "images/MENU.h"
-#include "images/icons.h"
-#include "images/nor_icon.h"
-#include "images/icon_FC.h"
-#include "images/icon_GB.h"
-#include "images/NOTFOUND.h"
+#include "MENU.h"
+#include "icons.h"
+#include "nor_icon.h"
+#include "icon_FC.h"
+#include "icon_GB.h"
+#ifdef RED_THEME
+#include "icon_GBC.h"
+#endif
+#include "NOTFOUND.h"
 
-#include "images/Chinese_manual.h"
-#include "images/English_manual.h"
+#include "Chinese_manual.h"
+#include "English_manual.h"
 
 #include "goomba.h"
 #include "pocketnes.h"
@@ -87,16 +90,33 @@ u16 gl_sleep_on;
 u16 gl_cheat_on;
 
 //----------------------------------------
-u16 gl_color_selected = RGB(00, 20, 26);
-u16 gl_color_text = RGB(31, 31, 31);
-u16 gl_color_selectBG_sd = RGB(00, 00, 31);
-u16 gl_color_selectBG_nor = RGB(10, 10, 10);
-u16 gl_color_MENU_btn = RGB(20, 20, 20);
-u16 gl_color_cheat_count = RGB(00, 31, 00);
-u16 gl_color_cheat_black = RGB(00, 00, 00);
-u16 gl_color_NORFULL = RGB(31, 00, 00);
-u16 gl_color_btn_clean = RGB(00, 00, 31);
-u16 gl_color_patch_note = RGB(31, 18, 18);
+#ifdef RED_THEME
+u16 gl_color_selected = RGB(28,7,6);
+#else
+u16 gl_color_selected = RGB(00,20,26);
+#endif
+
+u16 gl_color_text = RGB(31,31,31);
+
+#ifdef RED_THEME
+u16 gl_color_selectBG_sd = RGB(10,10,10);
+#else
+u16 gl_color_selectBG_sd = RGB(00,00,31);
+#endif
+
+u16 gl_color_selectBG_nor = RGB(10,10,10);
+u16 gl_color_MENU_btn     = RGB(20,20,20);
+u16 gl_color_cheat_count  = RGB(00,31,00);
+u16 gl_color_cheat_black  = RGB(00,00,00);
+u16 gl_color_NORFULL      = RGB(31,00,00);
+u16 gl_color_btn_clean    = RGB(00,00,31);
+
+#ifdef RED_THEME
+u16 gl_color_patch_note = RGB(20,20,20);
+#else
+u16 gl_color_patch_note = RGB(31,18,18);
+#endif
+
 //******************************************************************************
 void delay(u32 R0)
 {
@@ -281,7 +301,11 @@ void Show_ICON_filename(u32 show_offset, u32 file_select, u32 haveThumbnail)
 		}
 		else if (!strcasecmp(&(pfilename[strlen8 - 3]), "gbc"))
 		{
+#ifdef RED_THEME
+			icon = (u16*)(gImage_icon_GBC);
+#else
 			icon = (u16*)(gImage_icon_GB);
+#endif
 		}
 		else if (!strcasecmp(&(pfilename[strlen8 - 2]), "gb"))
 		{
@@ -1230,7 +1254,7 @@ void CheckLanguage(void)
 	{
 		LoadEnglish();
 	}
-	else//ÖÐÎÄ
+	else//ï¿½ï¿½ï¿½ï¿½
 	{
 		LoadChinese();
 	}
@@ -1689,6 +1713,8 @@ void Backup_savefile(const char* filename)
 			break;
 		}
 	}
+
+	//shift save to First Empty Space
 	if (FirstEmpySpace > 0)
 	{
 		for (s8 i = FirstEmpySpace - 1; i >= 0; --i)
@@ -1707,6 +1733,7 @@ void Backup_savefile(const char* filename)
 
 	ShowbootProgress(gl_saving_backup);
 
+	//Save the backup as 0
 	temp_filename[temp_filename_length] = '0';
 
 	if (Copy_file(filename, temp_filename))
