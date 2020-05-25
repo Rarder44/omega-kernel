@@ -71,26 +71,9 @@ typedef enum
     HELP = 3,
 } PAGE_NUM;
 
-extern u16 gl_color_selected;
-extern u16 gl_color_text;
-extern u16 gl_color_selectBG_sd;
-extern u16 gl_color_selectBG_nor;
-extern u16 gl_color_MENU_btn;
-extern u16 gl_color_cheat_count;
-extern u16 gl_color_cheat_black;
-extern u16 gl_color_NORFULL;
-extern u16 gl_color_btn_clean;
-
 extern FIL gfile;
 extern u8 pReadCache[MAX_pReadCache_size] EWRAM_BSS;
 extern FILINFO fileinfo;
 extern const char *backup_dir; // = "/SAVER-BACKUP";
-
-extern const unsigned char __attribute__((aligned(4))) gImage_SD[76800];
-extern const unsigned char __attribute__((aligned(4))) gImage_NOR[76800];
-extern const unsigned char __attribute__((aligned(4))) gImage_LOGO[76800];
-extern const unsigned char __attribute__((aligned(4))) gImage_icons[1344];
-//extern const unsigned char __attribute__((aligned(4))) gImage_MENU[28160];
-//extern const unsigned char __attribute__((aligned(4))) * gImage_MENU;
 
 #endif

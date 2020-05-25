@@ -23,6 +23,18 @@ SET.png
 splash.png
 
 
+Il file _text_palette.png dovrà essere una png di 1x10 px contenente, "riga per riga" i seguenti colori;
+u16 gl_color_selected
+u16 gl_color_text
+u16 gl_color_selectBG_sd
+u16 gl_color_selectBG_nor 
+u16 gl_color_MENU_btn 
+u16 gl_color_cheat_count 
+u16 gl_color_cheat_black 
+u16 gl_color_NORFULL 
+u16 gl_color_btn_clean
+u16 gl_color_patch_note 
+
 
 
 

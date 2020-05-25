@@ -49,13 +49,26 @@ namespace GRIT_h_TO_c
                 }
             }
 
+
+
+
             //creo il .h con tutti le dichiarazioni dei vettori extern
-            ss.Write(HeaderFilePath, "#ifndef " + HeaderDefine + "\r\n#define " + HeaderDefine + "\r\n\r\n", false);
+            ss.Write(HeaderFilePath, "#ifndef " + HeaderDefine + "\r\n#define " + HeaderDefine + "\r\n#include \"../Common.h\"\r\n\r\n", false);
 
             foreach (string s in Headers)
             {
                 ss.Write(HeaderFilePath, s + "\r\n", true);
             }
+
+
+            //Aggiunta variabili colors
+            Dictionary<int, string> pn = Text_Palette.GetPaletteNames;
+            foreach(KeyValuePair<int, string> kvp in pn)
+            {
+                ss.Write(HeaderFilePath, "extern u16 "+kvp.Value+";\r\n", true);
+            }
+
+
 
             ss.Write(HeaderFilePath, "#endif", true);
         }

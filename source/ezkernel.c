@@ -20,25 +20,6 @@
 #include "GBApatch.h"
 #include "showcht.h"
 
-/*#include "splash.h"
-#include "SD.h"
-#include "NOR.h"
-#include "SET.h"
-#include "HELP.h"
-#include "RECENTLY.h"
-
-#include "icons.h"
-#include "nor_icon.h"
-#include "icon_FC.h"
-#include "icon_GB.h"
-#ifdef RED_THEME
-#include "icon_GBC.h"
-#endif
-#include "NOTFOUND.h"
-
-#include "Chinese_manual.h"
-#include "English_manual.h"*/
-
 #include "goomba.h"
 #include "pocketnes.h"
 
@@ -84,19 +65,13 @@ u16 gl_sleep_on;
 u16 gl_cheat_on;
 
 //----------------------------------------
-#ifdef RED_THEME
-u16 gl_color_selected = RGB(28, 7, 6);
-#else
-u16 gl_color_selected = RGB(00, 20, 26);
-#endif
+/*u16 gl_color_selected = RGB(28, 7, 6);
+//u16 gl_color_selected = RGB(00, 20, 26);//OLD
 
 u16 gl_color_text = RGB(31, 31, 31);
 
-#ifdef RED_THEME
 u16 gl_color_selectBG_sd = RGB(10, 10, 10);
-#else
-u16 gl_color_selectBG_sd = RGB(00, 00, 31);
-#endif
+//u16 gl_color_selectBG_sd = RGB(00, 00, 31);//OLD
 
 u16 gl_color_selectBG_nor = RGB(10, 10, 10);
 u16 gl_color_MENU_btn = RGB(20, 20, 20);
@@ -105,11 +80,8 @@ u16 gl_color_cheat_black = RGB(00, 00, 00);
 u16 gl_color_NORFULL = RGB(31, 00, 00);
 u16 gl_color_btn_clean = RGB(00, 00, 31);
 
-#ifdef RED_THEME
 u16 gl_color_patch_note = RGB(20, 20, 20);
-#else
-u16 gl_color_patch_note = RGB(31, 18, 18);
-#endif
+//u16 gl_color_patch_note = RGB(31, 18, 18);//OLD*/
 
 //******************************************************************************
 void delay(u32 R0)

@@ -39,15 +39,17 @@ namespace Template_Util
 
         async private void button2_Click(object sender, EventArgs e)
         {
-           await Convert(textBox1.Text);
+            await Convert(textBox1.Text);
+            label2.Text = "Done!";
         }
 
         String GritPath;
+        String OutputFolderName = "theme";
         async public Task Convert(String Path)
         {
             SystemService ss = SM.Get<SystemService>();
             //creo la cartella Output
-            String OutputFolder = ss.CombinePaths(Path, "Output");
+            String OutputFolder = ss.CombinePaths(Path, OutputFolderName);
             ss.CreateFolderSecure(OutputFolder);
 
 
@@ -92,8 +94,24 @@ namespace Template_Util
                 String OutFile = ss.CombinePaths(OutputFolder, "asc126.h");
                 ss.Write(OutFile, outS,false);
 
-                //TODO:
-                //converto in .h con il tool js ( o riscrivo il codice del JS.... ) 
+            }
+            else if (FileName == "_text_palette.png")
+            {
+                //file caratteri
+                Bitmap b = new Bitmap(FilePath);
+                text_palette_generator tpg = new text_palette_generator();
+                Dictionary<string, string> d = tpg.convert(b);
+
+
+                String outS = "\r\n";
+                foreach(KeyValuePair<String,String> kp in d)
+                {
+                    outS += "u16 " + kp.Key + " = " + kp.Value + ";\r\n";
+                }
+
+                String OutFile = ss.CombinePaths(OutputFolder, "_text_palette.h");
+                ss.Write(OutFile, outS, false);
+
             }
             else if( FileName.EndsWith(".png"))     //TODO: implemento controlli per nomi corretti???
             {
