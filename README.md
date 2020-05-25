@@ -3,7 +3,7 @@
 [Source code at GitHub](https://github.com/Rarder44/omega-kernel)
 
 ## Patched by Rarder44 (v5)
-###Based on veikkos (v5) work:
+### Based on veikkos (v5) work:
 
 * Updated to [Goomba GB/GBC emulator](http://www.dwedit.org/gba/goombacolor.php) version 2019-05-04 
     * Applied [source patch](https://github.com/veikkos/omega-kernel/blob/master/goomba-patch/goomba_ezflash_omega.patch) to Goomba to make it Omega compatible
@@ -22,7 +22,7 @@
     * 5 last save files are stored
         * `.sav0` is most recent, `.sav4` is oldest
 		
-##What's new? 
+## What's new? 
     * Restore is AUTOMATIC process
 		* you can restore a backup by going, from the game boy, on saving and selecting "RESTORE" (there is a menu that displays the date and time of the backup creation)
 	* Backups can be deleted from the console ( if "holes" remain in the numbering, these are moved so that the numbering is chronological (0 = most recent)) 
