@@ -13,6 +13,7 @@
 #include "ff.h"
 #include "draw.h"
 #include "ezkernel.h"
+#include "theme/IMAGES.h"
 #include "Ezcard_OP.h"
 #include "saveMODE.h"
 #include "RTC.h"
@@ -130,10 +131,10 @@ void Show_help_window()
 	DrawHZText12("L+START:", 0, 3, 65, gl_color_selected, 1);
 	DrawHZText12(gl_LSTART_help, 0, 52, 65, gl_color_text, 1);
 
-	DrawHZText12("Patched by Rarder", 0, 3, 85, gl_color_patch_note, 1);
+	DrawHZText12("Patched by Rarder44", 0, 3, 85, gl_color_patch_note, 1);
 	DrawHZText12("based on veiRkkos mod", 0, 3, 100, gl_color_patch_note, 1);
 
-	DrawHZText12(gl_online_manual, 0, 240 - 70 - 7, 77, gl_color_text, 1);
+	DrawHZText12(gl_online_manual, 0, 240 - 78 - 7, 77, gl_color_text, 1);
 	while (1)
 	{
 		VBlankIntrWait();
@@ -1268,11 +1269,11 @@ void CheckLanguage(void)
 
 	if (gl_select_lang == 0xE1E1) //english
 	{
-		LoadEnglish();
+		LoadFirstLanguage();
 	}
 	else //����
 	{
-		LoadChinese();
+		LoadSecondLanguage();
 	}
 }
 //---------------------------------------------------------------------------------

@@ -30,8 +30,8 @@ extern char *gl_hot_key;
 extern char *gl_hot_key2;
 
 extern char *gl_language;
-extern char *gl_en_lang;
-extern char *gl_zh_lang;
+extern char *gl_first_lang;
+extern char *gl_second_lang;
 
 extern char *gl_set_btn;
 extern char *gl_ok_btn;
@@ -80,7 +80,7 @@ extern char *gl_rotating_backups;
 extern char *gl_saving_backup;
 extern char *gl_backup_done;
 
-void LoadEnglish(void);
-void LoadChinese(void);
+void LoadFirstLanguage(void);
+void LoadSecondLanguage(void);
 
 #endif

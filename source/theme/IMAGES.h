@@ -2,7 +2,7 @@
 #define IMAGES_HEADER
 #include "../Common.h"
 
-extern const unsigned char ASC_DATA[] ;
+extern const unsigned char ASC_DATA[];
 extern const unsigned char gImage_Chinese_manual[9800] __attribute__((aligned(4)));
 extern const unsigned char gImage_English_manual[9800] __attribute__((aligned(4)));
 extern const unsigned char gImage_HELP[76800] __attribute__((aligned(4)));

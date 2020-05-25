@@ -175,9 +175,9 @@ u32 Setting_window(void)
 			DrawHZText12(msg, 0, set_offset, y_offset + line_x * 3, gl_color_selected, 1);
 			Draw_select_icon(x_offset, y_offset + line_x * 3, (language_sel == 0x0));
 			Draw_select_icon(x_offset + 12 * 6, y_offset + line_x * 3, (language_sel == 0x1));
-			sprintf(msg, "%s", gl_en_lang);
+			sprintf(msg, "%s", gl_first_lang);
 			DrawHZText12(msg, 0, x_offset + 15, y_offset + line_x * 3, ((language_sel == 0) && currstate && (2 == select)) ? gl_color_selected : gl_color_text, 1);
-			sprintf(msg, "%s", gl_zh_lang);
+			sprintf(msg, "%s", gl_second_lang);
 			DrawHZText12(msg, 0, x_offset + 12 * 6 + 15, y_offset + line_x * 3, ((language_sel == 1) && currstate && (2 == select)) ? gl_color_selected : gl_color_text, 1);
 
 			//
