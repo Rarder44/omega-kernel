@@ -24,7 +24,7 @@
 		
 ## What's new? 
 * Restore is AUTOMATIC process
-	* you can restore a backup by going, from the game boy, on saving and selecting "RESTORE" (there is a menu that displays the date and time of the backup creation)
+	* you can restore a backup by going, from the game boy, in `/SAVER-BACKUP`, select a `savX` and then selecting "RESTORE" (there is a menu that displays the date and time of the backup creation)
 * Backups can be deleted from the console ( if "holes" remain in the numbering, these are moved so that the numbering is chronological (0 = most recent)) 
 * Changed how languages are handled ( removed the Chinese language; it is now easier to enter a second language )
 * Implemented red theme (by veikkos and Nona_Elexis) by default
