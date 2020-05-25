@@ -46,8 +46,10 @@ Use with your own risk!
 ## How to build
 
 1.Install [DevkitPro Updater v3.0.3](https://github.com/devkitPro/installer/releases) (install it on  C:\devkitPro\ to have all the correct setups)
+
 2.Check/Set the following environment variables in build_vscode.bat, based on your installation path
 	PATH,DEVKITARM,DEVKITPRO,LIBGBA
 
 3.Double click on build_vscode.bat under Windows. If it goes well, you will get ezkernel.bin which is the omega kernel upgrade file
+
 4.I recommend using the vscode task to build it
