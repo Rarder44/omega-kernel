@@ -65,6 +65,7 @@ ifdef RED_THEME
 	CFLAGS += -D RED_THEME
 else
 	INCLUDES += source/images
+	SOURCES += source/images
 endif
 
 #---------------------------------------------------------------------------------

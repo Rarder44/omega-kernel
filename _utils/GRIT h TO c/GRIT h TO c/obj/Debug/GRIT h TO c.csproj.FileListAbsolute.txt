@@ -1,0 +1,20 @@
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\obj\Debug\GRIT h TO c.csprojAssemblyReference.cache
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\obj\Debug\GRIT_h_TO_c.Form1.resources
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\obj\Debug\GRIT_h_TO_c.Properties.Resources.resources
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\obj\Debug\GRIT h TO c.csproj.GenerateResource.cache
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\obj\Debug\GRIT h TO c.csproj.CoreCompileInputs.cache
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\GRIT h TO c.exe.config
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\GRIT h TO c.exe
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\GRIT h TO c.pdb
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\ExtendCSharp.dll
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\MySql.Data.dll
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\DotNetZip.dll
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\Newtonsoft.Json.dll
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\CsQuery.dll
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\ZeroFormatter.dll
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\ZeroFormatter.Interfaces.dll
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\ExtendCSharp.pdb
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\bin\Debug\DotNetZip.xml
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\obj\Debug\GRIT h TO c.csproj.CopyComplete
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\obj\Debug\GRIT h TO c.exe
+C:\ezkernel\_utils\GRIT h TO c\GRIT h TO c\obj\Debug\GRIT h TO c.pdb

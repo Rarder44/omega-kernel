@@ -1,0 +1,23 @@
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\Template Util.exe.config
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\Template Util.exe
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\Template Util.pdb
+C:\ezkernel\_utils\Template Util\Template Util\obj\Debug\Template Util.csprojAssemblyReference.cache
+C:\ezkernel\_utils\Template Util\Template Util\obj\Debug\Template_Util.Properties.Resources.resources
+C:\ezkernel\_utils\Template Util\Template Util\obj\Debug\Template Util.csproj.GenerateResource.cache
+C:\ezkernel\_utils\Template Util\Template Util\obj\Debug\Template Util.csproj.CoreCompileInputs.cache
+C:\ezkernel\_utils\Template Util\Template Util\obj\Debug\Template Util.exe
+C:\ezkernel\_utils\Template Util\Template Util\obj\Debug\Template Util.pdb
+C:\ezkernel\_utils\Template Util\Template Util\obj\Debug\Template_Util.Form1.resources
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\ExtendCSharp.dll
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\GRIT h TO c.exe
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\MySql.Data.dll
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\DotNetZip.dll
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\Newtonsoft.Json.dll
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\CsQuery.dll
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\ZeroFormatter.dll
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\ZeroFormatter.Interfaces.dll
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\ExtendCSharp.pdb
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\GRIT h TO c.pdb
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\GRIT h TO c.exe.config
+C:\ezkernel\_utils\Template Util\Template Util\bin\Debug\DotNetZip.xml
+C:\ezkernel\_utils\Template Util\Template Util\obj\Debug\Template Util.csproj.CopyComplete

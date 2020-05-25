@@ -1,248 +1,248 @@
 #include "lang.h"
 
-char* gl_init_error;
-char* gl_power_off;
-char* gl_init_ok;
-char* gl_Loading;
-char* gl_file_overflow;
+char *gl_init_error;
+char *gl_power_off;
+char *gl_init_ok;
+char *gl_Loading;
+char *gl_file_overflow;
 
-char* gl_menu_btn;
-char* gl_lastest_game;
+char *gl_menu_btn;
+char *gl_lastest_game;
 
-char* gl_writing;
+char *gl_writing;
 
-char* gl_time;
-char* gl_Mon;
-char* gl_Tues;
-char* gl_Wed;
-char* gl_Thur;
-char* gl_Fri;
-char* gl_Sat;
-char* gl_Sun;
+char *gl_time;
+char *gl_Mon;
+char *gl_Tues;
+char *gl_Wed;
+char *gl_Thur;
+char *gl_Fri;
+char *gl_Sat;
+char *gl_Sun;
 
-char* gl_addon;
-char* gl_reset;
-char* gl_rts;
-char* gl_sleep;
-char* gl_cheat;
+char *gl_addon;
+char *gl_reset;
+char *gl_rts;
+char *gl_sleep;
+char *gl_cheat;
 
-char* gl_hot_key;
-char* gl_hot_key2;
+char *gl_hot_key;
+char *gl_hot_key2;
 
-char* gl_language;
-char* gl_en_lang;
-char* gl_zh_lang;
-char* gl_set_btn;
-char* gl_ok_btn;
+char *gl_language;
+char *gl_en_lang;
+char *gl_zh_lang;
+char *gl_set_btn;
+char *gl_ok_btn;
 
-char* gl_formatnor_info;
+char *gl_formatnor_info;
 
-char* gl_check_sav;
-char* gl_make_sav;
+char *gl_check_sav;
+char *gl_make_sav;
 
-char* gl_check_RTS;
-char* gl_make_RTS;
+char *gl_check_RTS;
+char *gl_make_RTS;
 
-char* gl_check_pat;
-char* gl_make_pat;
+char *gl_check_pat;
+char *gl_make_pat;
 
-char* gl_loading_game;
+char *gl_loading_game;
 
-char* gl_engine;
-char* gl_use_engine;
+char *gl_engine;
+char *gl_use_engine;
 
-char*  gl_recently_play;
+char *gl_recently_play;
 
-char* gl_START_help;
-char* gl_SELECT_help;
-char* gl_L_A_help;
-char* gl_LSTART_help;
-char* gl_online_manual;
+char *gl_START_help;
+char *gl_SELECT_help;
+char *gl_L_A_help;
+char *gl_LSTART_help;
+char *gl_online_manual;
 
-char* gl_no_game_played;
+char *gl_no_game_played;
 
-char* gl_ingameRTC;
+char *gl_ingameRTC;
 //char* gl_offRTC_powersave;
-char* gl_ingameRTC_open;
-char* gl_ingameRTC_close;
+char *gl_ingameRTC_open;
+char *gl_ingameRTC_close;
 
-char* gl_error_0;
-char* gl_error_1;
-char* gl_error_2;
-char* gl_error_3;
-char* gl_error_4;
-char* gl_error_5;
-char* gl_error_6;
+char *gl_error_0;
+char *gl_error_1;
+char *gl_error_2;
+char *gl_error_3;
+char *gl_error_4;
+char *gl_error_5;
+char *gl_error_6;
 //--
-char**  gl_rom_menu;
-char**  gl_nor_op;
+char **gl_rom_menu;
+char **gl_nor_op;
 
-char* gl_rotating_backups;
-char* gl_saving_backup;
-char* gl_backup_done;
+char *gl_rotating_backups;
+char *gl_saving_backup;
+char *gl_backup_done;
 
-//ÖÐÎÄ
-const char zh_init_error[]="TF¿¨³õÊ¼»¯Ê§°Ü";
-const char zh_power_off[]="¹Ø»ú";
-const char zh_init_ok[]="TF¿¨³õÊ¼»¯³É¹¦";
-const char zh_Loading[]="¼ÓÔØÖÐ...";
-const char zh_file_overflow[]="ÎÄ¼þÌ«´ó,²»ÄÜ¼ÓÔØ";
+//ï¿½ï¿½ï¿½ï¿½
+const char zh_init_error[] = "TFï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Ê§ï¿½ï¿½";
+const char zh_power_off[] = "ï¿½Ø»ï¿½";
+const char zh_init_ok[] = "TFï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½É¹ï¿½";
+const char zh_Loading[] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...";
+const char zh_file_overflow[] = "ï¿½Ä¼ï¿½Ì«ï¿½ï¿½,ï¿½ï¿½ï¿½Ü¼ï¿½ï¿½ï¿½";
 
-const char zh_menu_btn[]=" [B]È¡Ïû    [A]È·¶¨";
-const char zh_writing[]="ÕýÔÚÐ´...";
-const char zh_lastest_game[]="ÇëÑ¡Ôñ×îºóÒ»¸öÓÎÏ·";
+const char zh_menu_btn[] = " [B]È¡ï¿½ï¿½    [A]È·ï¿½ï¿½";
+const char zh_writing[] = "ï¿½ï¿½ï¿½ï¿½Ð´...";
+const char zh_lastest_game[] = "ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ï·";
 
-const char zh_time[] ="     Ê±¼ä";
-const char zh_Mon[]="Ò»";
-const char zh_Tues[]="¶þ";
-const char zh_Wed[]="Èý";
-const char zh_Thur[]="ËÄ";
-const char zh_Fri[]="Îå";
-const char zh_Sat[]="Áù";
-const char zh_Sun[]="ÈÕ";
+const char zh_time[] = "     Ê±ï¿½ï¿½";
+const char zh_Mon[] = "Ò»";
+const char zh_Tues[] = "ï¿½ï¿½";
+const char zh_Wed[] = "ï¿½ï¿½";
+const char zh_Thur[] = "ï¿½ï¿½";
+const char zh_Fri[] = "ï¿½ï¿½";
+const char zh_Sat[] = "ï¿½ï¿½";
+const char zh_Sun[] = "ï¿½ï¿½";
 
-const char zh_addon[]="     ¹¦ÄÜ";
-const char zh_reset[]="Èí¸´Î»";
-const char zh_rts[]="¼´Ê±´æµµ";
-const char zh_sleep[]="Ë¯Ãß";
-const char zh_cheat[]="½ðÊÖÖ¸";
+const char zh_addon[] = "     ï¿½ï¿½ï¿½ï¿½";
+const char zh_reset[] = "ï¿½ï¿½ï¿½ï¿½Î»";
+const char zh_rts[] = "ï¿½ï¿½Ê±ï¿½æµµ";
+const char zh_sleep[] = "Ë¯ï¿½ï¿½";
+const char zh_cheat[] = "ï¿½ï¿½ï¿½ï¿½Ö¸";
 
-const char zh_hot_key[]=" Ë¯ÃßÈÈ¼ü";
-const char zh_hot_key2[]=" ²Ëµ¥ÈÈ¼ü";
+const char zh_hot_key[] = " Ë¯ï¿½ï¿½ï¿½È¼ï¿½";
+const char zh_hot_key2[] = " ï¿½Ëµï¿½ï¿½È¼ï¿½";
 
-const char zh_language[]=" LANGUAGE";
-const char zh_lang[]=" ÖÐÎÄ";
+const char zh_language[] = " LANGUAGE";
+const char zh_lang[] = " ï¿½ï¿½ï¿½ï¿½";
 
-const char zh_set_btn[]="ÉèÖÃ";
-const char zh_ok_btn[]="±£´æ";
-const char zh_formatnor_info[]="È·¶¨?´óÔ¼4·ÖÖÓ";
+const char zh_set_btn[] = "ï¿½ï¿½ï¿½ï¿½";
+const char zh_ok_btn[] = "ï¿½ï¿½ï¿½ï¿½";
+const char zh_formatnor_info[] = "È·ï¿½ï¿½?ï¿½ï¿½Ô¼4ï¿½ï¿½ï¿½ï¿½";
 
-const char zh_check_sav[]="¼ì²éSAVÎÄ¼þ";
-const char zh_make_sav[]="´´½¨SAVÎÄ¼þ";
+const char zh_check_sav[] = "ï¿½ï¿½ï¿½SAVï¿½Ä¼ï¿½";
+const char zh_make_sav[] = "ï¿½ï¿½ï¿½ï¿½SAVï¿½Ä¼ï¿½";
 
-const char zh_check_RTS[]="¼ì²éRTSÎÄ¼þ";
-const char zh_make_RTS[]="´´½¨RTSÎÄ¼þ";
+const char zh_check_RTS[] = "ï¿½ï¿½ï¿½RTSï¿½Ä¼ï¿½";
+const char zh_make_RTS[] = "ï¿½ï¿½ï¿½ï¿½RTSï¿½Ä¼ï¿½";
 
-const char zh_check_pat[]="¼ì²éPATÎÄ¼þ";
-const char zh_make_pat[]="´´½¨PATÎÄ¼þ";
+const char zh_check_pat[] = "ï¿½ï¿½ï¿½PATï¿½Ä¼ï¿½";
+const char zh_make_pat[] = "ï¿½ï¿½ï¿½ï¿½PATï¿½Ä¼ï¿½";
 
-const char zh_loading_game[]="¼ÓÔØÓÎÏ·";
+const char zh_loading_game[] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·";
 
-const char zh_engine[]="     ÒýÇæ";
-const char zh_use_engine[]="¿ìËÙ²¹¶¡ÒýÇæ";
+const char zh_engine[] = "     ï¿½ï¿½ï¿½ï¿½";
+const char zh_use_engine[] = "ï¿½ï¿½ï¿½Ù²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 
-const char zh_recently_play[]="×î½üÓÎÏ·ÁÐ±í";
+const char zh_recently_play[] = "ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½Ð±ï¿½";
 
-const char zh_START_help[]="´ò¿ª×î½üÓÎÏ·ÁÐ±í";
-const char zh_SELECT_help[]="ËõÂÔÍ¼¿ª¹Ø";
-const char zh_L_A_help[]="ÀäÆô¶¯";
-const char zh_LSTART_help[]="É¾³ýÎÄ¼þ";
-const char zh_online_manual[]="  ÔÚÏßËµÃ÷Êé";
+const char zh_START_help[] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½Ð±ï¿½";
+const char zh_SELECT_help[] = "ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½";
+const char zh_L_A_help[] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+const char zh_LSTART_help[] = "É¾ï¿½ï¿½ï¿½Ä¼ï¿½";
+const char zh_online_manual[] = "  ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½";
 
-const char zh_no_game_played[]="»¹Ã»Íæ¹ýÓÎÏ·";
+const char zh_no_game_played[] = "ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Ï·";
 
-const char zh_ingameRTC[]=" ÓÎÏ·Ê±ÖÓ";
+const char zh_ingameRTC[] = " ï¿½ï¿½Ï·Ê±ï¿½ï¿½";
 //const char zh_offRTC_powersave[]=" ";
-const char zh_ingameRTC_open[]="´ò¿ª";
-const char zh_ingameRTC_close[]="¹Ø±Õ";//TURNOFF TO POWER SAVE
+const char zh_ingameRTC_open[] = "ï¿½ï¿½";
+const char zh_ingameRTC_close[] = "ï¿½Ø±ï¿½"; //TURNOFF TO POWER SAVE
 
-const char zh_error_0[]="ÎÄ¼þ¼Ð´íÎó";
-const char zh_error_1[]="ÎÄ¼þ´íÎó";
-const char zh_error_2[]="SAVER´íÎó";
-const char zh_error_3[]="´æµµ´íÎó";
-const char zh_error_4[]="¶ÁÈ¡´æµµ´íÎó";
-const char zh_error_5[]="´´½¨´æµµ´íÎó";
-const char zh_error_6[]="RTSÎÄ¼þ´íÎó";
+const char zh_error_0[] = "ï¿½Ä¼ï¿½ï¿½Ð´ï¿½ï¿½ï¿½";
+const char zh_error_1[] = "ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½";
+const char zh_error_2[] = "SAVERï¿½ï¿½ï¿½ï¿½";
+const char zh_error_3[] = "ï¿½æµµï¿½ï¿½ï¿½ï¿½";
+const char zh_error_4[] = "ï¿½ï¿½È¡ï¿½æµµï¿½ï¿½ï¿½ï¿½";
+const char zh_error_5[] = "ï¿½ï¿½ï¿½ï¿½ï¿½æµµï¿½ï¿½ï¿½ï¿½";
+const char zh_error_6[] = "RTSï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½";
 
-const char *zh_rom_menu[]={
-	"Ö±½ÓÆô¶¯",
-	"Æô¶¯´ø¸¨Öú",
-	"ÉÕÂ¼µ½NOR",
-	"ÉÕÂ¼µ½NOR´ø¸¨Öú",
-	"´æµµÀàÐÍ",
-	"½ðÊÖÖ¸",
+const char *zh_rom_menu[] = {
+	"Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+	"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+	"ï¿½ï¿½Â¼ï¿½ï¿½NOR",
+	"ï¿½ï¿½Â¼ï¿½ï¿½NORï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+	"ï¿½æµµï¿½ï¿½ï¿½ï¿½",
+	"ï¿½ï¿½ï¿½ï¿½Ö¸",
 };
-const char *zh_nor_op[3]={
-	"Ö±½ÓÔËÐÐ",
-	"É¾³ý",
-	"È«²¿¸ñÊ½»¯",
+const char *zh_nor_op[3] = {
+	"Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+	"É¾ï¿½ï¿½",
+	"È«ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½",
 };
 
-const char zh_rotating_backups[]="±¸·ÝÀúÊ·´æµµ";
-const char zh_saving_backup[]="±¸·Ýµ±Ç°´æµµ";
-const char zh_backup_done[]="±¸·ÝÍê³É";
+const char zh_rotating_backups[] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê·ï¿½æµµ";
+const char zh_saving_backup[] = "ï¿½ï¿½ï¿½Ýµï¿½Ç°ï¿½æµµ";
+const char zh_backup_done[] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 
-//Ó¢ÎÄ
-const char en_init_error[]="Micro SD card initial error";
-const char en_power_off[]="Power off";
-const char en_init_ok[]="Micro SD card initial OK";
-const char en_Loading[]="Loading...";
-const char en_file_overflow[]="The file overflow";
+//Ó¢ï¿½ï¿½
+const char en_init_error[] = "Micro SD card initial error";
+const char en_power_off[] = "Power off";
+const char en_init_ok[] = "Micro SD card initial OK";
+const char en_Loading[] = "Loading...";
+const char en_file_overflow[] = "The file overflow";
 
-const char en_menu_btn[]="[B]CANCEL    [A]OK";
-const char en_writing[]="WRITING...";
-const char en_lastest_game[]="SELECT THE LASTEST";
+const char en_menu_btn[] = "[B]CANCEL    [A]OK";
+const char en_writing[] = "WRITING...";
+const char en_lastest_game[] = "SELECT THE LASTEST";
 
-const char en_time[]="     TIME";
-const char en_Mon[]="MON";
-const char en_Tues[]="TUE";
-const char en_Wed[]="WED";
-const char en_Thur[]="THU";
-const char en_Fri[]="FRI";
-const char en_Sat[]="SAT";
-const char en_Sun[]="SUN";
+const char en_time[] = "     TIME";
+const char en_Mon[] = "MON";
+const char en_Tues[] = "TUE";
+const char en_Wed[] = "WED";
+const char en_Thur[] = "THU";
+const char en_Fri[] = "FRI";
+const char en_Sat[] = "SAT";
+const char en_Sun[] = "SUN";
 
-const char en_addon[]="    ADDON";
-const char en_reset[]="RESET";
-const char en_rts[]="SAVESTATE";
-const char en_sleep[]="SLEEP";
-const char en_cheat[]="CHEAT";
+const char en_addon[] = "    ADDON";
+const char en_reset[] = "RESET";
+const char en_rts[] = "SAVESTATE";
+const char en_sleep[] = "SLEEP";
+const char en_cheat[] = "CHEAT";
 
-const char en_hot_key[] ="SLEEP KEY";
-const char en_hot_key2[]=" MENU KEY";
+const char en_hot_key[] = "SLEEP KEY";
+const char en_hot_key2[] = " MENU KEY";
 
-const char en_language[]=" LANGUAGE";
-const char en_lang[]="ENGLISH";
-const char en_set_btn[]="SET";
-const char en_ok_btn[]=" OK";
+const char en_language[] = " LANGUAGE";
+const char en_lang[] = "ENGLISH";
+const char en_set_btn[] = "SET";
+const char en_ok_btn[] = " OK";
 
-const char en_formatnor_info[]="SURE?about 4 mins";
+const char en_formatnor_info[] = "SURE?about 4 mins";
 
-const char en_check_sav[]="CHECKING SAV FILE";
-const char en_make_sav[] ="CREATING SAV FILE";
+const char en_check_sav[] = "CHECKING SAV FILE";
+const char en_make_sav[] = "CREATING SAV FILE";
 
-const char en_check_RTS[]="CHECKING RTS FILE";
-const char en_make_RTS[] ="CREATING RTS FILE";
+const char en_check_RTS[] = "CHECKING RTS FILE";
+const char en_make_RTS[] = "CREATING RTS FILE";
 
-const char en_check_pat[]="CHECKING PAT FILE";
-const char en_make_pat[] ="CREATING PAT FILE";
+const char en_check_pat[] = "CHECKING PAT FILE";
+const char en_make_pat[] = "CREATING PAT FILE";
 
-const char en_loading_game[]="LOADING GAME";
+const char en_loading_game[] = "LOADING GAME";
 
-const char en_engine[]="   ENGINE";
-const char en_use_engine[]="FAST PATCH ENGINE";
+const char en_engine[] = "   ENGINE";
+const char en_use_engine[] = "FAST PATCH ENGINE";
 
-const char en_recently_play[]="RECENT PLAYED";
+const char en_recently_play[] = "RECENT PLAYED";
 
-const char en_START_help[]="Open recently played list";
-const char en_SELECT_help[]="Thumbnail toggle";
-const char en_L_A_help[]="Multiboot";
-const char en_LSTART_help[]="Delete file";
-const char en_online_manual[]="Online manual";
+const char en_START_help[] = "Open recently played list";
+const char en_SELECT_help[] = "Thumbnail toggle";
+const char en_L_A_help[] = "Multiboot";
+const char en_LSTART_help[] = "Delete file";
+const char en_online_manual[] = "Online manual";
 
-const char en_no_game_played[]="No game played yet";
+const char en_no_game_played[] = "No game played yet";
 
-const char en_ingameRTC[]=" GAME RTC";
-const char en_ingameRTC_open[]="OPEN";
-const char en_ingameRTC_close[]="CLOSE";//TURNOFF TO POWER SAVE
+const char en_ingameRTC[] = " GAME RTC";
+const char en_ingameRTC_open[] = "OPEN";
+const char en_ingameRTC_close[] = "CLOSE"; //TURNOFF TO POWER SAVE
 
-const char en_error_0[]="Folder error";
-const char en_error_1[]="File error";
-const char en_error_2[]="SAVER error";
-const char en_error_3[]="Save error";
-const char en_error_4[]="Read save error";
-const char en_error_5[]="Make save error";
-const char en_error_6[]="RTS file error";
+const char en_error_0[] = "Folder error";
+const char en_error_1[] = "File error";
+const char en_error_2[] = "SAVER error";
+const char en_error_3[] = "Save error";
+const char en_error_4[] = "Read save error";
+const char en_error_5[] = "Make save error";
+const char en_error_6[] = "RTS file error";
 
 const char *en_rom_menu[] = {
 	"CLEAN BOOT",
@@ -252,177 +252,178 @@ const char *en_rom_menu[] = {
 	"SAVE TYPE",
 	"CHEAT",
 };
-const char *en_nor_op[3]={
+const char *en_nor_op[3] = {
 	"DIRECT BOOT",
 	"DELETE",
 	"FORMAT ALL",
-};	
+};
 
-const char en_rotating_backups[]="ROTATING BACKUPS";
-const char en_saving_backup[]="SAVING BACKUP";
-const char en_backup_done[]="BACKUP DONE";
+const char en_rotating_backups[] = "ROTATING BACKUPS";
+const char en_saving_backup[] = "SAVING BACKUP";
+const char en_backup_done[] = "BACKUP DONE";
 
 //---------------------------------------------------------------------------------
 void LoadChinese(void)
 {
-	gl_init_error = (char*)zh_init_error;
-	gl_power_off = (char*)zh_power_off;
-	gl_init_ok = (char*)zh_init_ok;
-	gl_Loading = (char*)zh_Loading;
-	gl_file_overflow = (char*)zh_file_overflow;
+	gl_init_error = (char *)zh_init_error;
+	gl_power_off = (char *)zh_power_off;
+	gl_init_ok = (char *)zh_init_ok;
+	gl_Loading = (char *)zh_Loading;
+	gl_file_overflow = (char *)zh_file_overflow;
 
-	gl_menu_btn = (char*)zh_menu_btn;
-	gl_writing = (char*)zh_writing;
-	gl_lastest_game = (char*)zh_lastest_game;
-	
-	
-	gl_time = (char*)zh_time;	
-	gl_Mon = (char*)zh_Mon;
-	gl_Tues = (char*)zh_Tues;
-	gl_Wed = (char*)zh_Wed;
-	gl_Thur = (char*)zh_Thur;
-	gl_Fri = (char*)zh_Fri;
-	gl_Sat = (char*)zh_Sat;
-	gl_Sun = (char*)zh_Sun;
+	gl_menu_btn = (char *)zh_menu_btn;
+	gl_writing = (char *)zh_writing;
+	gl_lastest_game = (char *)zh_lastest_game;
 
-	gl_addon = (char*)zh_addon;
-	gl_reset = (char*)zh_reset;
-	gl_rts = (char*)zh_rts;
-	gl_sleep = (char*)zh_sleep;
-	gl_cheat = (char*)zh_cheat;	
-	
-	gl_hot_key = (char*)zh_hot_key;
-	gl_hot_key2 = (char*)zh_hot_key2;
+	gl_time = (char *)zh_time;
+	gl_Mon = (char *)zh_Mon;
+	gl_Tues = (char *)zh_Tues;
+	gl_Wed = (char *)zh_Wed;
+	gl_Thur = (char *)zh_Thur;
+	gl_Fri = (char *)zh_Fri;
+	gl_Sat = (char *)zh_Sat;
+	gl_Sun = (char *)zh_Sun;
 
-	gl_language =  (char*)zh_language;
-	gl_en_lang = (char*)en_lang;
-	gl_zh_lang = (char*)zh_lang;;
-	gl_set_btn = (char*)zh_set_btn;
-	gl_ok_btn = (char*)zh_ok_btn;
-	gl_formatnor_info = (char*)zh_formatnor_info;
+	gl_addon = (char *)zh_addon;
+	gl_reset = (char *)zh_reset;
+	gl_rts = (char *)zh_rts;
+	gl_sleep = (char *)zh_sleep;
+	gl_cheat = (char *)zh_cheat;
 
-	gl_check_sav = (char*)zh_check_sav;
-	gl_make_sav = (char*)zh_make_sav;
-		
-	gl_check_RTS = (char*)zh_check_RTS;
-	gl_make_RTS = (char*)zh_make_RTS;
-	
-	gl_check_pat = (char*)zh_check_pat;
-	gl_make_pat = (char*)zh_make_pat;
-	
-	gl_loading_game = (char*)zh_loading_game;
-	gl_engine = (char*)zh_engine;
-	gl_use_engine = (char*)zh_use_engine;
-	
-	gl_recently_play = (char*)zh_recently_play;
+	gl_hot_key = (char *)zh_hot_key;
+	gl_hot_key2 = (char *)zh_hot_key2;
 
-	gl_START_help = (char*)zh_START_help;
-	gl_SELECT_help = (char*)zh_SELECT_help;
-	gl_L_A_help = (char*)zh_L_A_help;
-	gl_LSTART_help = (char*)zh_LSTART_help;
-	gl_online_manual = (char*)zh_online_manual;
-	
-	gl_no_game_played = (char*)zh_no_game_played;
-	
-	gl_ingameRTC = (char*)zh_ingameRTC;
+	gl_language = (char *)zh_language;
+	gl_en_lang = (char *)en_lang;
+	gl_zh_lang = (char *)zh_lang;
+	;
+	gl_set_btn = (char *)zh_set_btn;
+	gl_ok_btn = (char *)zh_ok_btn;
+	gl_formatnor_info = (char *)zh_formatnor_info;
+
+	gl_check_sav = (char *)zh_check_sav;
+	gl_make_sav = (char *)zh_make_sav;
+
+	gl_check_RTS = (char *)zh_check_RTS;
+	gl_make_RTS = (char *)zh_make_RTS;
+
+	gl_check_pat = (char *)zh_check_pat;
+	gl_make_pat = (char *)zh_make_pat;
+
+	gl_loading_game = (char *)zh_loading_game;
+	gl_engine = (char *)zh_engine;
+	gl_use_engine = (char *)zh_use_engine;
+
+	gl_recently_play = (char *)zh_recently_play;
+
+	gl_START_help = (char *)zh_START_help;
+	gl_SELECT_help = (char *)zh_SELECT_help;
+	gl_L_A_help = (char *)zh_L_A_help;
+	gl_LSTART_help = (char *)zh_LSTART_help;
+	gl_online_manual = (char *)zh_online_manual;
+
+	gl_no_game_played = (char *)zh_no_game_played;
+
+	gl_ingameRTC = (char *)zh_ingameRTC;
 	//gl_offRTC_powersave = (char*)zh_offRTC_powersave;
-	gl_ingameRTC_open = (char*)zh_ingameRTC_open;
-	gl_ingameRTC_close = (char*)zh_ingameRTC_close;
-	
-	gl_error_0 = (char*)zh_error_0;
-	gl_error_1 = (char*)zh_error_1;
-	gl_error_2 = (char*)zh_error_2;
-	gl_error_3 = (char*)zh_error_3;
-	gl_error_4 = (char*)zh_error_4;
-	gl_error_5 = (char*)zh_error_5;
-	gl_error_6 = (char*)zh_error_6;
-	
-	//
-	gl_rom_menu = (char**)zh_rom_menu;
-	gl_nor_op = (char**)zh_nor_op;
+	gl_ingameRTC_open = (char *)zh_ingameRTC_open;
+	gl_ingameRTC_close = (char *)zh_ingameRTC_close;
 
-        gl_rotating_backups = (char*)zh_rotating_backups;
-        gl_saving_backup = (char*)zh_saving_backup;
-        gl_backup_done = (char*)zh_backup_done;
+	gl_error_0 = (char *)zh_error_0;
+	gl_error_1 = (char *)zh_error_1;
+	gl_error_2 = (char *)zh_error_2;
+	gl_error_3 = (char *)zh_error_3;
+	gl_error_4 = (char *)zh_error_4;
+	gl_error_5 = (char *)zh_error_5;
+	gl_error_6 = (char *)zh_error_6;
+
+	//
+	gl_rom_menu = (char **)zh_rom_menu;
+	gl_nor_op = (char **)zh_nor_op;
+
+	gl_rotating_backups = (char *)zh_rotating_backups;
+	gl_saving_backup = (char *)zh_saving_backup;
+	gl_backup_done = (char *)zh_backup_done;
 }
 //---------------------------------------------------------------------------------
 void LoadEnglish(void)
 {
-	gl_init_error = (char*)en_init_error;
-	gl_power_off = (char*)en_power_off;
-	gl_init_ok = (char*)en_init_ok;
-	gl_Loading = (char*)en_Loading;
-	gl_file_overflow = (char*)en_file_overflow;
+	gl_init_error = (char *)en_init_error;
+	gl_power_off = (char *)en_power_off;
+	gl_init_ok = (char *)en_init_ok;
+	gl_Loading = (char *)en_Loading;
+	gl_file_overflow = (char *)en_file_overflow;
 
-	gl_menu_btn = (char*)en_menu_btn;
-	gl_writing = (char*)en_writing;
-	gl_lastest_game = (char*)en_lastest_game;
-	
-	gl_time = (char*)en_time;	
-	gl_Mon = (char*)en_Mon;
-	gl_Tues = (char*)en_Tues;
-	gl_Wed = (char*)en_Wed;
-	gl_Thur = (char*)en_Thur;
-	gl_Fri = (char*)en_Fri;
-	gl_Sat = (char*)en_Sat;
-	gl_Sun = (char*)en_Sun;
-	gl_addon = (char*)en_addon;
-	gl_reset = (char*)en_reset;
-	gl_rts = (char*)en_rts;
-	gl_sleep = (char*)en_sleep;
-	gl_cheat = (char*)en_cheat;	
-	
-	gl_hot_key = (char*)en_hot_key;
-	gl_hot_key2 = (char*)en_hot_key2;
-	
-	gl_language =  (char*)en_language;
-	gl_en_lang = (char*)en_lang;
-	gl_zh_lang = (char*)zh_lang;;
-	gl_set_btn = (char*)en_set_btn;
-	gl_ok_btn = (char*)en_ok_btn;
-	gl_formatnor_info = (char*)en_formatnor_info;
+	gl_menu_btn = (char *)en_menu_btn;
+	gl_writing = (char *)en_writing;
+	gl_lastest_game = (char *)en_lastest_game;
 
-	gl_check_sav = (char*)en_check_sav;
-	gl_make_sav = (char*)en_make_sav;
-		
-	gl_check_RTS = (char*)en_check_RTS;
-	gl_make_RTS = (char*)en_make_RTS;
-	
-	gl_check_pat = (char*)en_check_pat;
-	gl_make_pat = (char*)en_make_pat;
-	
-	gl_loading_game = (char*)en_loading_game;
-	
-	gl_engine = (char*)en_engine;
-	gl_use_engine = (char*)en_use_engine;
-	
-	gl_recently_play = (char*)en_recently_play;
-	
-	gl_START_help = (char*)en_START_help;
-	gl_SELECT_help = (char*)en_SELECT_help;
-	gl_L_A_help = (char*)en_L_A_help;
-	gl_LSTART_help = (char*)en_LSTART_help;
-	gl_online_manual = (char*)en_online_manual;
-	
-	gl_no_game_played = (char*)en_no_game_played;
-	
-	gl_ingameRTC = (char*)en_ingameRTC;
+	gl_time = (char *)en_time;
+	gl_Mon = (char *)en_Mon;
+	gl_Tues = (char *)en_Tues;
+	gl_Wed = (char *)en_Wed;
+	gl_Thur = (char *)en_Thur;
+	gl_Fri = (char *)en_Fri;
+	gl_Sat = (char *)en_Sat;
+	gl_Sun = (char *)en_Sun;
+	gl_addon = (char *)en_addon;
+	gl_reset = (char *)en_reset;
+	gl_rts = (char *)en_rts;
+	gl_sleep = (char *)en_sleep;
+	gl_cheat = (char *)en_cheat;
+
+	gl_hot_key = (char *)en_hot_key;
+	gl_hot_key2 = (char *)en_hot_key2;
+
+	gl_language = (char *)en_language;
+	gl_en_lang = (char *)en_lang;
+	gl_zh_lang = (char *)zh_lang;
+	;
+	gl_set_btn = (char *)en_set_btn;
+	gl_ok_btn = (char *)en_ok_btn;
+	gl_formatnor_info = (char *)en_formatnor_info;
+
+	gl_check_sav = (char *)en_check_sav;
+	gl_make_sav = (char *)en_make_sav;
+
+	gl_check_RTS = (char *)en_check_RTS;
+	gl_make_RTS = (char *)en_make_RTS;
+
+	gl_check_pat = (char *)en_check_pat;
+	gl_make_pat = (char *)en_make_pat;
+
+	gl_loading_game = (char *)en_loading_game;
+
+	gl_engine = (char *)en_engine;
+	gl_use_engine = (char *)en_use_engine;
+
+	gl_recently_play = (char *)en_recently_play;
+
+	gl_START_help = (char *)en_START_help;
+	gl_SELECT_help = (char *)en_SELECT_help;
+	gl_L_A_help = (char *)en_L_A_help;
+	gl_LSTART_help = (char *)en_LSTART_help;
+	gl_online_manual = (char *)en_online_manual;
+
+	gl_no_game_played = (char *)en_no_game_played;
+
+	gl_ingameRTC = (char *)en_ingameRTC;
 	//gl_offRTC_powersave = (char*)en_offRTC_powersave;
-	gl_ingameRTC_open = (char*)en_ingameRTC_open;
-	gl_ingameRTC_close = (char*)en_ingameRTC_close;
-	
-	gl_error_0 = (char*)en_error_0;
-	gl_error_1 = (char*)en_error_1;
-	gl_error_2 = (char*)en_error_2;
-	gl_error_3 = (char*)en_error_3;
-	gl_error_4 = (char*)en_error_4;
-	gl_error_5 = (char*)en_error_5;
-	gl_error_6 = (char*)en_error_6;
-	//
-	gl_rom_menu = (char**)en_rom_menu;
-	gl_nor_op = (char**)en_nor_op;
+	gl_ingameRTC_open = (char *)en_ingameRTC_open;
+	gl_ingameRTC_close = (char *)en_ingameRTC_close;
 
-        gl_rotating_backups = (char*)en_rotating_backups;
-        gl_saving_backup = (char*)en_saving_backup;
-        gl_backup_done = (char*)en_backup_done;
+	gl_error_0 = (char *)en_error_0;
+	gl_error_1 = (char *)en_error_1;
+	gl_error_2 = (char *)en_error_2;
+	gl_error_3 = (char *)en_error_3;
+	gl_error_4 = (char *)en_error_4;
+	gl_error_5 = (char *)en_error_5;
+	gl_error_6 = (char *)en_error_6;
+	//
+	gl_rom_menu = (char **)en_rom_menu;
+	gl_nor_op = (char **)en_nor_op;
+
+	gl_rotating_backups = (char *)en_rotating_backups;
+	gl_saving_backup = (char *)en_saving_backup;
+	gl_backup_done = (char *)en_backup_done;
 }
