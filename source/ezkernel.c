@@ -130,11 +130,8 @@ void Show_help_window()
 	DrawHZText12("L+START:", 0, 3, 65, gl_color_selected, 1);
 	DrawHZText12(gl_LSTART_help, 0, 52, 65, gl_color_text, 1);
 
-	DrawHZText12("Patched by veikkos (v5)", 0, 3, 85, gl_color_patch_note, 1);
-	DrawHZText12(" - Goomba 2019-05-04", 0, 3, 100, gl_color_patch_note, 1);
-	DrawHZText12("   - GBC/GB mode", 0, 3, 115, gl_color_patch_note, 1);
-	DrawHZText12(" - Quick start (L or L+A)", 0, 3, 130, gl_color_patch_note, 1);
-	DrawHZText12(" - Save backup", 0, 3, 145, gl_color_patch_note, 1);
+	DrawHZText12("Patched by Rarder", 0, 3, 85, gl_color_patch_note, 1);
+	DrawHZText12("based on veiRkkos mod", 0, 3, 100, gl_color_patch_note, 1);
 
 	DrawHZText12(gl_online_manual, 0, 240 - 70 - 7, 77, gl_color_text, 1);
 	while (1)
@@ -1617,6 +1614,10 @@ u32 Check_file_type(TCHAR *pfilename)
 	{
 		return 5;
 	}
+	else if (!strcasecmp(&(pfilename[strlen8 - 3]), "bin"))
+	{
+		return 6;
+	}
 	else
 	{
 		return 0xff;
@@ -2301,6 +2302,27 @@ re_showfile:
 		{
 			//TODO: manual backup??
 
+			goto re_showfile;
+		}
+		else if (is_EMU == 6) //6 = *.bin
+		{
+			// cancellare?
+			u8 fileToDelete[MAX_path_len];
+			StrConcat(fileToDelete, MAX_path_len, currentpath, "");
+
+			if (strlen(currentpath) != 1) //if i'm not in the root
+			{
+				StrConcat(fileToDelete, MAX_path_len, fileToDelete, "/"); //append a / at the end of the path
+			}
+
+			StrConcat(fileToDelete, MAX_path_len, fileToDelete, pfilename);
+
+			u8 res = show_MENU_General(fileToDelete, "DO YOU WANT TO", "DELETE THIS FILE?", "");
+			if (res == 1)
+			{
+				f_unlink(fileToDelete);
+				goto refind_file;
+			}
 			goto re_showfile;
 		}
 		else if (is_EMU)

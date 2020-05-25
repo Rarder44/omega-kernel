@@ -5,6 +5,7 @@
 #include "ff.h"
 #include "IMAGES.h"
 #include "lang.h"
+#include "Util.h"
 
 #define MAX_pReadCache_size 0x20000
 #define MAX_files 0x200

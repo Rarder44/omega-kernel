@@ -73,8 +73,6 @@ u8 show_MENU_backup_details(const char *filename)
 
     u8 RepaintMenu = 1;
 
-    Show_MENU_btn(); //show cancel/ok
-
     while (1)
     {
         if (RepaintMenu == 1)
@@ -85,6 +83,7 @@ u8 show_MENU_backup_details(const char *filename)
             s8 line = 0;
 
             DrawPic((u16 *)gImage_MENU, 56, 25, 128, 110, 0, 0, 1);                //draw background
+            Show_MENU_btn();                                                       //show cancel/ok
             DrawHZText12(strDate, 32, 60, y_offset + line * 14, gl_color_text, 1); //print date
             line++;
             DrawHZText12(strTime, 32, 60, y_offset + line * 14, gl_color_text, 1); //print time
@@ -138,6 +137,7 @@ u8 show_MENU_backup_details(const char *filename)
 
     return 0;
 }
+
 //show a menu for ask user to confirm overwrite a save file
 //return 1 = true -> overwrite | 0 = false -> not overwrite
 u8 Show_menu_override_restore_save()
@@ -181,4 +181,54 @@ u8 Show_menu_override_restore_save()
     }
 
     return to_override;
+}
+
+//show a general Menu
+//then ask for restore or delete selected backup
+//return
+// 0 = B
+// 1 = A
+
+u8 show_MENU_General(const char *str1, const char *str2, const char *str3, const char *str4)
+{
+    u8 RepaintMenu = 1;
+
+    while (1)
+    {
+        if (RepaintMenu == 1)
+        {
+            RepaintMenu = 0;
+
+            u32 y_offset = 30; //offset of text start
+            s8 line = 0;
+
+            DrawPic((u16 *)gImage_MENU, 56, 25, 128, 110, 0, 0, 1);             //draw background
+            Show_MENU_btn();                                                    //show cancel/ok
+            DrawHZText12(str1, 32, 60, y_offset + line * 14, gl_color_text, 1); //print date
+            line++;
+            DrawHZText12(str2, 32, 60, y_offset + line * 14, gl_color_text, 1); //print time
+            line++;
+            DrawHZText12(str3, 32, 60, y_offset + line * 14, gl_color_text, 1); //print time
+            line++;
+            DrawHZText12(str4, 32, 60, y_offset + line * 14, gl_color_text, 1); //print time
+            line++;
+        }
+
+        ShowTime(SD_list, 0);
+        VBlankIntrWait(); //???
+
+        scanKeys();
+        u16 keysdown = keysDown();
+
+        if (keysdown & KEY_A)
+        {
+            return 1;
+        }
+        else if (keysdown & KEY_B)
+        {
+            return 0; //cancel
+        }
+    }
+
+    return 0;
 }
