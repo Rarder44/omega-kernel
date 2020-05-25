@@ -2,7 +2,7 @@
 
 [Source code at GitHub](https://github.com/Rarder44/omega-kernel)
 
-## Patched by Rarder44 (v5)
+## Patched by Rarder44
 ### Based on veikkos (v5) work:
 
 * Updated to [Goomba GB/GBC emulator](http://www.dwedit.org/gba/goombacolor.php) version 2019-05-04 
